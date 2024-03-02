@@ -7,13 +7,14 @@ type Props = {
 }
 const MainLayout = ({ children }: Props) => {
     return (
-        <>
-            <Navbar />
-            <main>
-                {children}
-            </main>
-            <Footer />
-        </>
+        <html lang="en">
+            <body>
+                <main>
+                    {children}
+                </main>
+                <Footer />
+            </body>
+        </html>
     )
 }
 
