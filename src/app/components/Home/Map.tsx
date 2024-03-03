@@ -437,7 +437,7 @@ const Map = () => {
         setSelectedTown(name);
     };
     return (
-        <div className="w-screen  relative flex flex-col justify-center items-center">
+        <div className="w-full  relative flex flex-col justify-center items-center bg-inherit">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 792 612.019" className="max-w-4xl">
                 <g key="square"
                     clipPath="url(#a)"
