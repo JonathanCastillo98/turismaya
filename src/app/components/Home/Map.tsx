@@ -449,7 +449,7 @@ const Map = () => {
                     <path
                         d="M-942472.56-471233.66H942477.8h-5.24V471233.66H-942477.8h5.24V-470191.7"
                         style={{
-                            fill: "#fff",
+                            fill: "transparent",
                             fillOpacity: 1,
                             fillRule: "evenodd",
                             stroke: "#a1c3cc",

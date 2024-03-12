@@ -19,6 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #fff;
+  margin: 0px;
 }
 
 @layer utilities {
@@ -26,4 +27,3 @@ body {
     text-wrap: balance;
   }
 }
-
