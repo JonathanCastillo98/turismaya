@@ -13,7 +13,7 @@ const Home = () => {
         <h1 className=" md:text-4xl  font-bold ">Traza tu ruta maya y viaja con <span>Turismaya</span></h1>
         <p className="font-semibold text-lg max-w-4xl mx-auto leading-5 mt-4">Descubre la belleza y autenticidad que cada pueblo de Yucatán tiene para ofrecerte. Desde su historia hasta los misterios mayas que se encuentran en ellos.</p>
       </div>  */}
-      <Map />
+      {/* <Map /> */}
       {/* <HomeGallery /> */}
     </>
   )
