@@ -450,11 +450,17 @@ const Map = () => {
     if (!mounted) return null
 
     return (
-        <div className="w-full h-screen relative bg-inherit border border-white">
-            <section className=" border border-white w-[90%] max-w-8xl mx-auto flex flex-row justify-center items-center">
-                <article className="w-[40%] h-full border border-[blue]"></article>
-                <article className="w-[60%] h-full border border-[yellow]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 792 612.019" className="max-w-4xl">
+        <div className="w-full h-full">
+            <section className="w-[90%] max-w-8xl h-[calc(100vh-70px)] mx-auto flex flex-row justify-center items-center">
+                <article className="flex-1 h-full flex flex-col justify-center items-center">
+                    <h2 className="text-5xl font-bold tracking-tighter text-center">{hoverTown || selectedTown}</h2>
+                    <button className="px-4 py-2 bg-foreground text-background flex flex-row justify-center items-center gap-2 outline-none font-bold border-2 border-background w-max rounded-sm transition duration-300 ease-in-out hover:bg-background hover:text-foreground hover:border-foreground">
+                        <span className="align-middle">Conócelo</span>
+                        <FaArrowRight className="text-sm align-middle h-full" />
+                    </button>
+                </article>
+                <article className="flex-[2_1_0%] h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 792 612.019" className="w-full">
                         <g key="square"
                             clipPath="url(#a)"
                             style={{
@@ -512,10 +518,6 @@ const Map = () => {
                         </defs>
                     </svg>
                 </article>
-                {/* <span className=" h-12 w-[100px] gap-2 items-center justify-center rounded-md  bg-[#346157] font-medium text-white md:w-32">
-                    {hoverTown || selectedTown}
-                    <FaArrowRight />
-                </span> */}
             </section>
         </div>
     )

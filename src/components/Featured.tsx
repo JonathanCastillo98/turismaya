@@ -4,7 +4,7 @@ const Featured = () => {
     return (
         <div className="mt-[30px]">
             <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] xl:text-[96px]">
-                <b>Hey, Turismaya here!</b> Discover the wonder of Yucatán.
+                <b>Bienvenido a la familia Turismayab!</b> Descubre las maravillas de Yucatán.
             </h1>
             <div className="mt-[60px] flex items-center gap-[50px]">
                 <div className="hidden h-[500px] relative lg:flex lg:flex-1">

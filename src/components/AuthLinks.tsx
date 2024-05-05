@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 const AuthLinks = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+    const status = "authenticated";
     const [open, setOpen] = useState<boolean>(false);
     return (
         <>
-            {!isAuthenticated ? (
-                <Link className="hidden" href={'/login'}>Iniciar sesión</Link>
+            {status !== "authenticated" ? (
+                <Link className="hidden sm::block" href={'/login'}>Iniciar sesión</Link>
             ) : (
                 <>
                     <Link href={'/write'}>Crear</Link>

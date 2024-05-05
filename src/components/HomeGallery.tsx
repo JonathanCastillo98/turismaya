@@ -5,18 +5,19 @@ import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const images = [
-    "2.jpg",
-    "10.jpg",
-    "3.jpg",
-    "13.jpg",
-    "8.jpg",
-    "1.jpg",
-    "2.jpg",
-    "5.jpg",
-    "9.jpg",
-    "6.jpg",
-    "12.jpg",
-    "1.jpg",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+    "p1.webp",
+
 ]
 
 export default function HomeGallery() {
@@ -57,13 +58,12 @@ export default function HomeGallery() {
 
     return (
         <>
-            <div ref={gallery} className='h-[175vh] bg-[rgb(45,45,45)] flex flex-row gap-[2vw] p-[2vw] border-box overflow-hidden'>
+            <div ref={gallery} className='h-[175vh] bg-background flex flex-row gap-[2vw] p-[2vw] border-box overflow-hidden'>
                 <Column images={[images[0], images[1], images[2]]} y={y} top={"-45%"} />
                 <Column images={[images[3], images[4], images[5]]} y={y2} top={"-95%"} />
                 <Column images={[images[6], images[7], images[8]]} y={y3} top={"-45%"} />
                 <Column images={[images[9], images[10], images[11]]} y={y4} top={"-75%"} />
             </div>
-            <div className='h-[100vh]'></div>
         </>
     )
 }
