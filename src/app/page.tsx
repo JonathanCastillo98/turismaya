@@ -7,10 +7,10 @@ import Image from "next/image"
 const Home = () => {
   return (
     <>
-      <Landing />
-      <Calendar />
-      <Map />
-      <HomeGallery />
+      {/* <Landing /> */}
+      {/* <Calendar /> */}
+      {/* <Map /> */}
+      {/* <HomeGallery /> */}
     </>
   )
 }
