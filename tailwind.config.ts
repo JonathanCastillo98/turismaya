@@ -61,6 +61,8 @@ const config = {
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'chichen': 'url("/images/chichen.webp")',
+        'ch': 'url("/images/ch.jpg")',
+        'home_mobile': 'url("/images/home_mobile.webp")',
       },
       borderRadius: {
         lg: "var(--radius)",

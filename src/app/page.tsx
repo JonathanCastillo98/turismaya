@@ -7,7 +7,7 @@ import Image from "next/image"
 const Home = () => {
   return (
     <>
-      {/* <Landing /> */}
+      <Landing />
       {/* <Calendar /> */}
       {/* <Map /> */}
       {/* <HomeGallery /> */}

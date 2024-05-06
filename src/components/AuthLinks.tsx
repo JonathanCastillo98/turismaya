@@ -49,7 +49,7 @@ const AuthLinks = () => {
                             <div className="w-full h-full bg-softBg rounded-xl flex flex-col justify-start items-center mt-8  text-[20px] font-semibold gap-[20px]">
                                 <Link
                                     href={'/'}
-                                    className="w-max flex items-center gap-[15px]">
+                                    className="w-max flex items-center gap-[15px] mt-[20px]">
                                     <FaHome />
                                     Inicio
                                 </Link>
