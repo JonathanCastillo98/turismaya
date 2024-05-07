@@ -15,15 +15,22 @@ const Calendar = () => {
     if (!mounted) return null
 
     return (
-        <section className="w-full h-screen">
-            <section className="w-[90%] max-w-8xl mx-auto h-[calc(100vh-70px)] flex items-center">
-                <div className="flex-1 h-full items-center flex">
+        <section className="w-full h-max mt-8 py-4">
+            <section className="w-[90%] max-w-8xl mx-auto flex items-center">
+                <div className="relative flex-1 h-full items-center flex">
+                    <div className="absolute w-full h-full bg-background/90 z-20 lg:hidden"></div>
+                    <div className="absolute top-0 left-0 w-full h-full z-30 flex flex-col bg-black/15 rounded-2xl md:justify-center lg:hidden">
+                        <h2 className="text-3xl font-bold tracking-tighter text-center my-8 sm:text-4xl md:text-6xl md:mb-14">Traza tu ruta maya y viaja con <span className="text-softTextColor">Turismayab</span></h2>
+                        <p className="text-black dark:text-white text-[16px] text-center leading-5 font-[500] md:text-2xl/relaxed">
+                            <b>Turismayab</b> te lleva a explorar la riqueza cultural y natural de Yucatán a través de tours cuidadosamente diseñados que revelan los tesoros de la región, desde vestigios mayas y zonas arqueologicas, hasta playas idílicas y cenotes  de agua cristalina. Sumérgete en la autenticidad de la cultura local mientras pruebas los sabores únicos de la cocina yucateca.
+                        </p>
+                    </div>
+
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="80%"
                         fill={dark ? "#F0E7DC" : "#232123"}
                         viewBox="0 0 1280 1280"
-                        className=""
+                        className="w-full lg:w-[90%]"
                     >
                         <path d="M609.5.6C606.8.8 598 1.4 590 2c-111.9 8.2-224.4 48.5-316.5 113.3C75.9 254.3-26.4 488.4 6 727.5c20.4 151 96.3 292 211.6 393.2 141.3 123.9 326.9 179.1 513.4 152.8 122.1-17.3 237.5-70.5 331.2-152.7 175.8-154.2 253.4-392.1 202.4-620.6-36.8-164.5-138.7-309.7-280.6-399.9-87.9-55.8-182.2-87.9-287.5-97.9-15-1.4-75.6-2.7-87-1.8zm88.1 34.8c141.9 14.8 266.7 72.7 366.2 170 93.5 91.5 153.1 205.3 175.2 334.5 10.2 59.9 10.6 134.5 1 193.6-23 142.4-90.8 266.3-198.1 361.7-86.8 77.3-198.1 128.9-314.4 145.7-33.5 4.8-45.2 5.6-87.5 5.6s-54-.8-87.5-5.6c-214.1-31-395.8-174.3-476.7-375.9-16.4-41-28.2-84.2-35.8-131.5-7.9-48.4-9.1-108.9-3.4-161.5 20.8-191.9 134.6-363.9 304.6-460.7 74.8-42.5 163-69.7 247.3-76.2 7.7-.6 15.6-1.3 17.5-1.5 9.2-1 77.5.3 91.6 1.8z" />
                         <path d="M599.5 44.1c-105 7.3-203.3 40.8-290.9 99.1-146 97.3-242.6 255.5-262 429.3-4.9 44.1-4.9 90.9-.1 134.5 13.6 120.8 62 230.8 142.9 325 11.6 13.5 45.1 47 58.6 58.6 86.3 74.2 185.6 120.8 296 138.9 34.8 5.7 52.2 6.9 96 6.9s61.2-1.2 96-6.9c85-14 164.3-45.2 235.5-92.8 123.2-82.2 212.2-208.4 247.9-351.5 17.1-68.6 21.9-141.5 14-212.7-24.9-223-174.7-414-386.4-492.8C793.7 59.9 738.3 48.1 679 44c-16.5-1.1-63-1.1-79.5.1zM673 60c64.8 4 122.7 16.8 181.9 40.3 88.7 35.1 169.6 93.9 231.4 168.1 111.8 134.2 157.1 311.3 123.6 483.6-26.4 135.5-101.1 257.8-210.4 344.2-117.9 93.2-269.2 137.2-418 121.8-94.4-9.8-183.8-41.7-262-93.5C189.9 1038.6 99.7 903.8 70.1 752c-19-97.8-12.8-199.2 18-293C153.5 259.9 322.4 110.2 527 70.1c47.8-9.4 99.3-12.9 146-10.1z" />
@@ -67,9 +74,9 @@ const Calendar = () => {
                         <path d="M483 1076c-7.6 1.6-12.1 4-11.8 6.4.3 2.4 3.4 2.6 10.8.6 6.7-1.8 21.4-.8 27.3 1.8 6.9 3.1 12 7.4 14.8 12.7 2.5 4.6 4.7 5.6 6.8 3.1 1-1.1.8-2.3-.8-5.3-6.2-11.6-18.7-18.6-35.3-19.7-4-.3-9.3-.1-11.8.4zM640.1 1039.1c-3.2 2-3.5 2-10 .3-13.1-3.3-23-.3-27.1 8.2-3.8 7.7-.7 15 7.5 17.8 4.5 1.6 7 .8 8-2.4.8-2.7 0-3.8-4.1-5.5-3.1-1.3-3.5-1.8-3.2-4.7.3-2.9.8-3.5 4.4-4.7 3.5-1.2 5.1-1.3 9.7-.2l5.6 1.2-.6 8.7c-.3 4.8-.7 8.8-.8 9-.2.2-4.4.7-9.4 1.2-9.9.9-16.6 3.8-19.6 8.4-1.8 2.8-22.5 105.2-22.5 111.4 0 2.4.7 5.9 1.6 7.8 2.3 4.8 9.6 10.9 16.3 13.6 5.5 2.3 6.1 2.3 50.6 2.3 39.6 0 45.7-.2 50.5-1.7 7.3-2.3 14.6-7.2 17.7-12 4.5-6.8 4.3-9.5-5.2-54.8-4.7-22.8-9.7-46.7-11-52.9-1.3-6.3-3.2-12.6-4.2-14-3.4-4.7-12.2-8.3-21.8-8.8l-8.5-.6v-5.6c0-3.1-.4-7-.9-8.7-.9-3-.7-3.2 2.9-4.3 5.9-1.8 11.4-1.4 14.4 1 3.7 2.9 3.1 5.9-1.6 8.2-2.8 1.2-3.8 2.3-3.8 4 0 7.8 12.6 5 15.8-3.5 2.7-7-1.2-15.4-8.5-18.4-4.3-1.8-12.7-1.8-19.2.2-5 1.4-5.4 1.4-9.5-.5-5.4-2.6-9.2-2.6-13.5 0zm12.3 11.2c1.5 2 2.1 4.7 2.4 9.7l.4 7H639v-5.4c0-9.4 3.2-14.9 8.4-14.4 1.8.2 3.7 1.4 5 3.1zm28.4 26.2c3.8 1.7 7.8 4.9 9.2 7.6 1.8 3.2 21.1 100 20.5 102.2-1.3 4.2-5 8.8-9.5 11.7-8.7 5.6-12.5 6-55.2 6-36.1 0-39.1-.1-44-2-6.2-2.3-12.2-7-14.4-11.2-1.5-2.9-2.2-10.3-1-11.5.3-.4.6 1 .6 3.1 0 7.1 4.7 12.7 14.5 17.3l6 2.8H647c45.6 0 46.6-.1 55-8.4 8.2-7.9 8.3-5.8-2.5-58.5-5.1-25.3-9.8-47.2-10.3-48.6-.5-1.4-2.1-3.5-3.5-4.8-2.2-2.1-4-2.4-18.6-3.5-17.4-1.2-52.2.2-56.1 2.3-4 2.1-6.1 9.1-13.2 44.5-3.9 19.5-7.3 35.3-7.5 35.1-.3-.3 6.8-38.2 12.3-65.5 2.3-11.4 5.3-15.7 12.9-18.5 6-2.2 60-2.2 65.3-.1zm-25.5 8.1c1.1.4 1.4 1.6 1 4.3-2 15 12.1 53.2 24.2 65.7 5.5 5.6 10.7 8.5 15.6 8.6 2.6.1 2.9.5 4 5.7 2.1 9.2 1.7 13.3-1.2 17.2-4.1 5.4-11.9 9.1-20.2 9.7-7 .5-7 .5-6.4-1.9 1.9-6.7 1.9-9.7-.1-14.1-3.8-8.7-12.6-13-26.7-13.1-6.9 0-10.3.5-14.7 2.2-6.1 2.3-12.3 8.2-13.4 12.6-.7 2.8-.1 10.2 1 12.7 1 2.3-2 2.4-9.1.3-6.6-2-12.6-6.4-14.8-11.1-1.6-3.4-1.6-4.5-.5-10.8 1.5-8.4 1.9-9.8 3-9.1.4.3 3.1-.2 5.9-1.1 16.1-4.7 35.2-41.7 35.5-68.4.1-4.7.6-8.8 1.1-9.2 1.2-.9 13.7-1.1 15.8-.2zm-22.3 7.8c0 22.2-14.7 55.1-28.4 63.5-4.2 2.7-7.9 2.8-7.2.3.2-.9 3-14.5 6.2-30.2 3.1-15.7 6.1-29.1 6.7-29.8 1.8-2.3 18.5-10 22-10.2.4 0 .7 2.9.7 6.4zm43.6-.9 9.1 4.2 6 30.9c3.3 17 5.9 31.1 5.8 31.2-.2.2-1.8.1-3.6-.3-12.5-2.8-30.4-37.8-31.7-61.8l-.5-9.8 2.9.7c1.6.3 7 2.5 12 4.9zm-86.9 73.7c-.3.7-.5.2-.5-1.2s.2-1.9.5-1.3c.2.7.2 1.9 0 2.5zm-1 5c-.3.8-.6.5-.6-.6-.1-1.1.2-1.7.5-1.3.3.3.4 1.2.1 1.9zm68 3.3c9.7 2.9 13.9 11.5 9.8 19.5l-1.6 3h-39.7l-1.6-4c-2-5-2-7.3-.2-10.9 4-7.7 20.5-11.4 33.3-7.6z" />
                     </svg>
                 </div>
-                <div className="flex-1">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-14 ">Traza tu ruta maya y viaja con <span className="text-softTextColor">Turismayab</span></h2>
-                    <p className="text-softTextColor text-lg md:text-xl/relaxed text-center">
+                <div className="flex-1 px-4 hidden lg:block">
+                    <h2 className="font-bold tracking-tighter text-center mb-8 text-4xl xl:text-6xl">Traza tu ruta maya y viaja con <span className="text-softTextColor">Turismayab</span></h2>
+                    <p className="text-softTextColor leading-6 text-lg font-[500] text-center xl:text-xl">
                         Turismayab te lleva a explorar la riqueza cultural y natural de Yucatán a través de tours cuidadosamente diseñados que revelan los tesoros de la región, desde vestigios mayas y zonas arqueologicas, hasta playas idílicas y cenotes  de agua cristalina. Sumérgete en la autenticidad de la cultura local mientras pruebas los sabores únicos de la cocina yucateca.
                     </p>
                 </div>

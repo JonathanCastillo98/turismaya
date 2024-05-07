@@ -34,7 +34,7 @@ const Landing = () => {
                     <div className="w-[50%] h-full z-40">
                         <div className="h-full pl-4 flex flex-col justify-center ml-auto pr-12 lg:pl-[10%]">
                             <h1 className="text-6xl  font-bold text-white mb-6 lg:text-7xl">Yucatán</h1>
-                            <p className="text-sm text-white mb-6 lg:text-base">Un destino lleno de historia maya, playas hermosas y comida deliciosa. Con sus ruinas antiguas, aguas cristalinas y platillos como la cochinita pibil, ofrece una experiencia única llena de cultura y encanto.</p>
+                            <p className="text-sm text-white mb-6 lg:text-lg/relaxed">Un destino lleno de historia maya, playas hermosas y comida deliciosa. Con sus vestigios antiguos, aguas cristalinas y platillos como la cochinita pibil, ofrece una experiencia única llena de cultura y encanto.</p>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ const Landing = () => {
                 </div>
             </section>
             <section className="w-full h-max flex flex-col lg:hidden">
-                <div className="absolute inset-0 bg-background/40"></div>
+                <div className="absolute w-full h-full inset-0 bg-background/40"></div>
                 <div className='relative w-[90%] max-w-8xl h-[700vh] max-h-[400px] flex flex-col items-center justify-between mx-auto mt-[70px] rounded-2xl'>
                     <div className="absolute h-full w-full bg-gradient-to-t from-black/100 via-black/10 to-transparent z-10 rounded-2xl"></div>
                     <Image src={"/images/Home_Mobile.webp"} alt="home_mobile" fill className="object-cover rounded-2xl absolute top-0 left-0" />

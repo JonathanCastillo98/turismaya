@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Landing />
-      {/* <Calendar /> */}
+      <Calendar />
       {/* <Map /> */}
       {/* <HomeGallery /> */}
     </>
