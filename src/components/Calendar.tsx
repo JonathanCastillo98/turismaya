@@ -22,7 +22,7 @@ const Calendar = () => {
                     <div className="absolute top-0 left-0 w-full h-full z-30 flex flex-col bg-black/15 rounded-2xl md:justify-center lg:hidden">
                         <h2 className="text-3xl font-bold tracking-tighter text-center my-8 sm:text-4xl md:text-6xl md:mb-14">Traza tu ruta maya y viaja con <span className="text-softTextColor">Turismayab</span></h2>
                         <p className="text-black dark:text-white text-[16px] text-center leading-5 font-[500] md:text-2xl/relaxed">
-                            <b>Turismayab</b> te lleva a explorar la riqueza cultural y natural de Yucatán a través de tours cuidadosamente diseñados que revelan los tesoros de la región, desde vestigios mayas y zonas arqueologicas, hasta playas idílicas y cenotes  de agua cristalina. Sumérgete en la autenticidad de la cultura local mientras pruebas los sabores únicos de la cocina yucateca.
+                            <b>Turismayab</b> te lleva a explorar la riqueza cultural y natural de tán a través de tours cuidadosamente diseñados que revelan los tesoros de la región, desde vestigios mayas y zonas arqueologicas, hasta playas idílicas y cenotes  de agua cristalina. Sumérgete en la autenticidad de la cultura local mientras pruebas los sabores únicos de la cocina yucateca.
                         </p>
                     </div>
 
