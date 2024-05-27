@@ -24,7 +24,7 @@ const ThemeToggle = () => {
                     : { background: "#0f172a" }
             }
         >
-            <Image src="/moon.png" alt="moon" width={14} height={14} />
+            <Image src="/icons/moon.png" alt="moon" width={14} height={14} />
             <div
                 className="w-[15px] h-[15px] rounded-[50%] absolute"
                 style={
@@ -33,7 +33,7 @@ const ThemeToggle = () => {
                         : { right: "1px", background: "#ddd" }
                 }
             ></div>
-            <Image src="/sun.png" alt="sun" width={14} height={14} />
+            <Image src="/icons/sun.png" alt="sun" width={14} height={14} />
         </div>
     )
 }

@@ -8,7 +8,7 @@
     --background: 38 40% 90%;
     --foreground: 280 2% 14%;
     --textColor: 0 0% 0%;
-    --softBg: 0 0% 94.1%;
+    --softBg: 38 30% 92%;
     --softTextColor: 0 0% 38.8%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -34,7 +34,7 @@
     --background: 280 2% 14%;
     --foreground: 38 40% 90%;
     --textColor: 0 0% 86.3%;
-    --softBg: 220 30% 21%;
+    --softBg: 280 5% 20%;
     --softTextColor: 0 0% 65%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -65,4 +65,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+  color: var(--foreground);
 }
